@@ -1,0 +1,95 @@
+###
+// Retrieve all users
+GET http://localhost:3000/users
+
+###
+// Register POST request
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "firstName": "Alex",
+    "middleName": "Alunan",
+    "lastName": "Aranes",
+    "type": "customer",
+    "email": "alex.aranes@samplemail.com",
+    "password": "useruser"
+}
+
+###
+// Login POST request (Valid)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "alex.aranes@samplemail.com",
+    "password": "useruser"
+}
+
+### 
+// Login POST request (Invalid)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "alex.aranes@samplemail.com",
+    "password": "userusers"
+}
+
+### 
+// Login POST request (Invalid)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "alex.arane@samplemail.com",
+    "password": "useruser"
+}
+
+### 
+// Delete alex.aranes
+POST http://localhost:3000/deleteUser
+Content-Type: application/json
+
+{
+    "email": "alex.aranes@samplemail.com"
+}
+
+// OTHER ENTRY
+###
+// Register
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "firstName": "Gabriel",
+    "middleName": "Alunan",
+    "lastName": "Aranes",
+    "type": "customer",
+    "email": "gab.aranes@samplemail.com",
+    "password": "testtest"
+}
+
+###
+// Delete
+POST http://localhost:3000/deleteUser
+Content-Type: application/json
+
+{
+    "email": "gab.aranes@samplemail.com"
+}
+
+
+###
+// Add Product
+POST http://localhost:3000/addProduct
+Content-Type: application/json
+
+{
+    "name": "Another Sample Product 6",
+    "desc": "This is a sample product",
+    "price": 30,
+    "type": 2,
+    "qty": 43,
+    "image": "some base 64 string"
+}
