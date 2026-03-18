@@ -140,8 +140,8 @@ class _AddPlanState extends State<AddPlan> {
   }
 
   void getSuggestion(String input) async {
-    String API_KEY = 'MAPBOX_TOKEN_HERE';
-        // "pk.eyJ1IjoiZmFieXNzIiwiYSI6ImNtYXl1dXIzZDBjb2sybG9zOHBzZjM4eWEifQ.gL3QhdMdADC6vyfONwRaCA";
+    String API_KEY =
+        "pk.eyJ1IjoiZmFieXNzIiwiYSI6ImNtYXl1dXIzZDBjb2sybG9zOHBzZjM4eWEifQ.gL3QhdMdADC6vyfONwRaCA";
     String baseURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
     String request =
         '$baseURL${Uri.encodeComponent(input)}.json?access_token=$API_KEY&types=poi,address,place,locality,region';
