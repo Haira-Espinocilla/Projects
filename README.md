@@ -34,6 +34,10 @@ This repository serves as a collection of my academic projects, software designs
 7. **WeTravel**
     * **Description:** A travel app that organizes planning activities like itineraries and agendas. Users can input travel plan names, dates, and locations using an integrated map. It features modules for flight details, accommodations, checklists, and interest-based matchmaking. A profile page allows users to set their accounts to private, restricting others to seeing only their username and plan counts.
     * **Tech Stack:** Created using **Flutter**, **Firestore Cloud** for real-time database management, and **Firebase Authentication** for secure user login and data privacy.
+  
+8. **MILLI**
+   * **Description:** Milli transforms the traditional, often confusing physical prescription into a streamlined digital experience. By combining automated transcription with a prioritized, high-glanceability tracking system, Milli ensures users never miss a dose. Beyond tracking, the app integrates a community forum where users can connect and share insights within a safe, moderated healthcare space.
+   * **Prototype**
 
 
 
